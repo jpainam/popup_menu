@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 Rect getWidgetGlobalRect(GlobalKey key) {
-  assert(key.currentContext != null, '');
+  //assert(key.currentContext != null, '');
 
   RenderBox renderBox = key.currentContext!.findRenderObject() as RenderBox;
   var offset = renderBox.localToGlobal(Offset.zero);
